@@ -34,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
-        {/* Google tag (gtag.js) */}
+        {/* Google tag (gtag.js) - original */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-80L19ZKQ49"
           strategy="afterInteractive"
@@ -45,6 +45,19 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-80L19ZKQ49');
+          `}
+        </Script>
+        {/* Google tag (gtag.js) - G-KQLGJYXDN6 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-KQLGJYXDN6"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics-g2" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-KQLGJYXDN6');
           `}
         </Script>
         {children}
