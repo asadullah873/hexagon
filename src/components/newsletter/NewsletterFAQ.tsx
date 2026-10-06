@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const NewsletterFAQ: React.FC = () => {
   const faqs = [
@@ -20,6 +21,21 @@ const NewsletterFAQ: React.FC = () => {
     },
   ];
 
+  const renderBrandLink = (text: string) => {
+    const brand = "Hexagon Scaffolding";
+    const parts = text.split(brand);
+    return parts.flatMap((part, index) =>
+      index === parts.length - 1
+        ? [part]
+        : [
+            part,
+            <Link key={`brand-${index}`} href="/" className="cursor-pointer no-underline">
+              {brand}
+            </Link>,
+          ]
+    );
+  };
+
   return (
     <section className="mt-10 sm:mt-12">
       <h2 className="text-3xl sm:text-4xl font-bold text-[#0C1D48] mb-4 text-center">
@@ -39,7 +55,7 @@ const NewsletterFAQ: React.FC = () => {
               {faq.question}
             </h3>
             <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-              {faq.answer}
+              {renderBrandLink(faq.answer)}
             </p>
           </div>
         ))}

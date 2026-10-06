@@ -160,7 +160,7 @@ const rotation = reducedMotion ? 0 : -(BASE_DEG + spinStep * STEP_DEG);
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                Hexagon Scaffolding – The Most Reliable Scaffold Services in New York, NY & New Jersey, NJ
+                <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link> – The Most Reliable Scaffold Services in New York, NY & New Jersey, NJ
 
               </motion.h1>
 
@@ -171,7 +171,7 @@ const rotation = reducedMotion ? 0 : -(BASE_DEG + spinStep * STEP_DEG);
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                When it comes to safe, efficient and fully compliant scaffolding solutions, Hexagon Scaffolding stands as one of the leading scaffold service providers in New York, NY & New Jersey, NJ. We specialize in delivering Scaffold Services in New York for commercial construction, residential projects, industrial facilities and large scale developments. It is because of our dedication and commitment to quality, our engineering expertise and strict compliance with safety standards as set out by OSHA regulations that we stand as Local Scaffold Contractors New Jersey, NJ are the top choice for contractors and builders who genuinely comprehend the requirements of contemporary construction.
+                When it comes to safe, efficient and fully compliant scaffolding solutions, <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link> stands as one of the leading scaffold service providers in New York, NY & New Jersey, NJ. We specialize in delivering Scaffold Services in New York for commercial construction, residential projects, industrial facilities and large scale developments. It is because of our dedication and commitment to quality, our engineering expertise and strict compliance with safety standards as set out by OSHA regulations that we stand as Local Scaffold Contractors New Jersey, NJ are the top choice for contractors and builders who genuinely comprehend the requirements of contemporary construction.
               </motion.p>
 
               {/* Logos Row */}

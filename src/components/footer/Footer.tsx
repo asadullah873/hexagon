@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <h3 className="text-lg font-semibold text-white">About the Company</h3>
               <p className="text-sm text-gray-300 leading-relaxed max-w-full">
-                Hexagon Scaffolding Inc. is a leading provider of suspended scaffolding solutions, 
+                <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link> Inc. is a leading provider of suspended scaffolding solutions, 
                 specializing in high-quality equipment for construction and maintenance projects. 
                 With years of experience in the industry, we deliver reliable, safe, and efficient 
                 scaffolding systems tailored to meet the unique needs of our clients.
@@ -176,7 +176,7 @@ const Footer: React.FC = () => {
           <div className="text-center">
             <p className="text-sm text-gray-400">
               {/* © {new Date().getFullYear()} Hexagon Scaffolding Inc. All rights reserved. */}
-              © 2026 Hexagon Scaffolding Inc. All rights reserved.
+              © 2026 <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link> Inc. All rights reserved.
             </p>
           </div>
         </div>

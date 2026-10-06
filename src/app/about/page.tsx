@@ -1,6 +1,7 @@
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Image from "next/image";
+import Link from "next/link";
 import logoImage from "@/assets/logo-footer.jpg";
 import aboutBanner from "@/assets/about/About-Us-Banner.jpg";
 
@@ -26,10 +27,10 @@ export default function About() {
           {/* Centered Main Heading */}
           <div className="text-center mb-8 sm:mb-10 lg:mb-12">
             <p className="text-xs uppercase tracking-wide text-[#0C1D48]/70 mb-2">
-              About Hexagon Scaffolding
+              About <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link>
             </p>
             <h1 className="text-3xl sm:text-4xl font-bold text-[#0C1D48]">
-              About Hexagon Scaffolding
+              About <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link>
             </h1>
           </div>
 
@@ -63,7 +64,7 @@ export default function About() {
                 </h2>
                 
                 <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  Hexagon Scaffolding, Inc. is a recognized leader in providing suspended scaffolding solutions in Tri-state area.
+                  <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link>, Inc. is a recognized leader in providing suspended scaffolding solutions in Tri-state area.
                 </p>
                 
                 <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
@@ -80,7 +81,7 @@ export default function About() {
                 </p>
                 
                 <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                  We provide 24-hour emergency services and can service not only our own equipment but also that of most competitors. This commitment to service is why our customers choose Hexagon Scaffolding time and time again.
+                  We provide 24-hour emergency services and can service not only our own equipment but also that of most competitors. This commitment to service is why our customers choose <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link> time and time again.
                 </p>
               </div>
             </div>

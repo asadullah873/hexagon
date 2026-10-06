@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const NewsletterHero: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const NewsletterHero: React.FC = () => {
           <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-6">
             Get exclusive updates on our latest products, safety best practices, and industry news 
             delivered directly to your inbox. Join thousands of contractors, site managers, and 
-            partners who trust Hexagon Scaffolding.
+            partners who trust <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link>.
           </p>
           
           {/* Bullet Points */}

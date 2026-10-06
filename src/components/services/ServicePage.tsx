@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import type { ServiceDef, ServiceKey } from "@/lib/services";
 import Header from "@/components/header/Header";
@@ -24,6 +25,21 @@ const servicePageImages: Record<ServiceKey, typeof rentalPageImage> = {
 };
 
 export default function ServicePage({ service }: { service: ServiceDef }) {
+  const renderBrandLink = (text: string) => {
+    const brand = "Hexagon Scaffolding";
+    const parts = text.split(brand);
+    return parts.flatMap((part, index) =>
+      index === parts.length - 1
+        ? [part]
+        : [
+            part,
+            <Link key={`brand-${index}`} href="/" className="cursor-pointer no-underline">
+              {brand}
+            </Link>,
+          ]
+    );
+  };
+
   return (
     <div className="w-full">
       <Header />
@@ -64,7 +80,7 @@ export default function ServicePage({ service }: { service: ServiceDef }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.15 }}
             >
-              {service.tagline}
+              {renderBrandLink(service.tagline)}
             </motion.p>
           </div>
         </div>
@@ -77,7 +93,7 @@ export default function ServicePage({ service }: { service: ServiceDef }) {
               <div className="space-y-4 sm:space-y-5 lg:space-y-6">
                 {service.body.map((p, i) => (
                   <p key={i} className="text-base sm:text-lg leading-relaxed text-gray-700">
-                    {p}
+                    {renderBrandLink(p)}
                   </p>
                 ))}
               </div>

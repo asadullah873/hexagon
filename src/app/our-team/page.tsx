@@ -1,6 +1,7 @@
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Image from "next/image";
+import Link from "next/link";
 import teamBanner from "@/assets/our-team/Team-Banner.jpg";
 
 export default function OurTeam() {
@@ -107,7 +108,7 @@ export default function OurTeam() {
 
               {/* Description paragraph */}
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto mt-4">
-                At Hexagon Scaffolding Inc., our dedicated team is committed to providing the highest standards of scaffolding and training services. Each member of our team brings a wealth of experience and expertise, ensuring that we meet and exceed industry standards. We take pride in our collaborative approach to every project, delivering exceptional results for our clients.
+                At <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link> Inc., our dedicated team is committed to providing the highest standards of scaffolding and training services. Each member of our team brings a wealth of experience and expertise, ensuring that we meet and exceed industry standards. We take pride in our collaborative approach to every project, delivering exceptional results for our clients.
               </p>
             </div>
 

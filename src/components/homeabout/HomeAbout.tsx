@@ -21,7 +21,8 @@ const HomeAbout: React.FC = () => {
 
             <div className="space-y-4">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Offering affordable, flexible and practical Scaffold Rental Services in NJ, Hexagon Scaffolding is well known. Our NYC affordable scaffold rental offers without sacrificing the quality or safety of the gear. Every scaffolding system is meticulously checked, maintained and delivered on time to keep your project on schedule.
+                Offering affordable, flexible and practical Scaffold Rental Services in NJ,{" "}
+                <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link> is well known. Our NYC affordable scaffold rental offers without sacrificing the quality or safety of the gear. Every scaffolding system is meticulously checked, maintained and delivered on time to keep your project on schedule.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -35,7 +36,7 @@ const HomeAbout: React.FC = () => {
 
             {/* Key Points */}
             <div className="mt-8">
-              <h3 className="text-xl font-semibold text-[#0C1D48] mb-4">Why Choose Hexagon Scaffolding?</h3>
+              <h3 className="text-xl font-semibold text-[#0C1D48] mb-4">Why Choose <Link href="/" className="cursor-pointer no-underline">Hexagon Scaffolding</Link>?</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-[#0C1D48] rounded-full mt-2 flex-shrink-0"></div>
